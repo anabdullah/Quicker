@@ -2,7 +2,7 @@ import React from "react";
 import image from "./ProfileImages/image.jpg";
 import ContactRow from "./ContactRow";
 
-const Contacts = () => {
+const Contacts = ({fn}) => {
   const contacts = [
     {
       userImage: image,
@@ -86,6 +86,7 @@ const Contacts = () => {
             number={contact.number}
             contactName={contact.contactName}
             lastMasg={contact.lastMasg}
+            fn={fn}
           />
         );
       })}
