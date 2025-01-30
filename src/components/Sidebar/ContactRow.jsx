@@ -3,7 +3,7 @@ import React from "react";
 const ContactRow = ({ userImage, number, contactName, lastMasg, fn }) => {
 
   return (
-    <div className="row py-3 px-4 flex gap-4 transition-all ease-in-out cursor-pointer justify-between items-center hover:bg-[#060706]" onClick={()=>{fn()}}>
+    <div className="row py-3 px-4 flex gap-4 transition-all ease-in-out cursor-pointer justify-between items-center hover:bg-[#060706]" onClick={()=>{fn(contactName)}}>
       <div className="profile w-12 h-12 rounded-full overflow-hidden cursor-pointer border border-slate-600">
         <img src={userImage} alt={contactName} />
       </div>

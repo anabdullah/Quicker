@@ -3,7 +3,7 @@ import image from "../Sidebar/ProfileImages/image.jpg";
 import { BiArrowBack } from "react-icons/bi";
 import { BsThreeDots, BsThreeDotsVertical } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({chatTitle}) => {
   return (
     <div className="w-full h-[10%] bg-[#040b08] py-2 px-3 flex items-center gap-4">
       <div className="left-block flex items-center gap-2">
@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       <div className="right-block text-white w-full flex justify-between items-center">
         <div className="contact-n-status">
-            <h1 className="text-lg">Contact Name here</h1>
+            <h1 className="text-lg">{chatTitle}</h1>
             <p className="text-xs opacity-60 text-[#58ffb4]">Online</p>
         </div>
         <BsThreeDotsVertical  className=" cursor-pointer"/>
